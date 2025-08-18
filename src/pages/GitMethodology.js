@@ -12,6 +12,16 @@ function GitMethodology() {
         This ensures that <code>main</code> always reflects a production-ready state, while 
         <code>dev</code> serves as an integration branch for ongoing work.
       </p>
+      <p className="mb-6">
+        For more information regarding <strong>Git Flow</strong>, see <a
+          href="https://www.gitkraken.com/learn/git/git-flow"
+          className="text-blue-600 hover:underline hover:text-blue-800 transition-colors"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          https://www.gitkraken.com/learn/git/git-flow
+        </a>.
+      </p>
       <p className="italic text-green-800">
         Message: Consistent workflows minimize merge conflicts and deployment risks.
       </p>
