@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 
 function Home() {
   const pages = [
+    { name: "About", path: "/about" },
     { name: "Version Control", path: "/version-control" },
     { name: "Work Planning", path: "/work-planning" },
     { name: "Development Guides", path: "/development-guides" },
