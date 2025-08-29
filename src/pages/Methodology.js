@@ -1,6 +1,10 @@
+import Sidebar from "../components/Sidebar";
+
 function Methodology() {
   return (
-    <div className="max-w-3xl mx-auto mt-8">
+    <main className="max-w-3xl mx-auto mt-8">
+      <h1 className="text-3xl font-bold text-green-700 mb-0">Methodology</h1>
+      <Sidebar />
       <h2 className="text-2xl font-bold text-green-700 mb-4">Version Control</h2>
       <p className="mb-6">
         We use GitHub for managing different parts of the project, including the frontend, backend, 
@@ -73,7 +77,7 @@ function Methodology() {
       <p className="italic text-green-800">
         Message: Centralized planning reduces confusion and keeps the team aligned.
       </p>
-    </div>
+    </main>
   );
 }
 

@@ -1,6 +1,10 @@
+import Sidebar from "../components/Sidebar";
+
 function DeploymentImplementation() {
   return (
-    <div className="max-w-3xl mx-auto mt-8">
+    <main className="max-w-3xl mx-auto mt-8">
+      <h1 className="text-3xl font-bold text-green-700 mb-0">Deployment/Implementation</h1>
+      <Sidebar />
       <h2 className="text-2xl font-bold text-green-700 mb-4">Implementation</h2>
       <p className="mb-6">
         The implementation followed a <strong>high-level staged approach</strong>. We began by setting 
@@ -25,7 +29,7 @@ function DeploymentImplementation() {
       <p className="italic text-green-800">
         Message: Documenting setup ensures reproducibility for future team members.
       </p>
-    </div>
+    </main>
   );
 }
 

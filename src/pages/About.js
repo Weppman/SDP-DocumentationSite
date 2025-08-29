@@ -1,7 +1,10 @@
+import Sidebar from "../components/Sidebar";
+
 function About() {
   return (
-    <div className="max-w-3xl mx-auto mt-8">
-      <h2 className="text-2xl font-bold text-green-700 mb-4">About</h2>
+    <main className="max-w-3xl mx-auto mt-8">
+      <h1 className="text-3xl font-bold text-green-700 mb-0">About</h1>
+      <Sidebar />
 
       <p className="mb-6">
         <strong>Hiking Logbook</strong> (name pending) is a web-based application for tracking and planning hiking activities.
@@ -45,7 +48,7 @@ function About() {
         <li>Nathan Le Roux</li>
         <li>Niel Grobler</li>
       </ul>
-    </div>
+    </main>
   );
 }
 
