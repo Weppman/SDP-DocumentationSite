@@ -1,4 +1,4 @@
-function TechnologyStack() {
+function Architecture() {
   return (
     <div className="max-w-3xl mx-auto mt-8">
       <h2 className="text-2xl font-bold text-green-700 mb-4">Technology Stack</h2>
@@ -14,8 +14,9 @@ function TechnologyStack() {
       <p className="italic text-green-800">
         Message: Using one platform for deployment simplified CI/CD.
       </p>
+      
     </div>
   );
 }
 
-export default TechnologyStack;
+export default Architecture;
