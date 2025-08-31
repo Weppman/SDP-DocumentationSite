@@ -2,14 +2,14 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import VersionControl from "./pages/VersionControl";
-import WorkPlanning from "./pages/WorkPlanning";
-import DevelopmentGuides from "./pages/DevelopmentGuides";
-import GitMethodology from "./pages/GitMethodology";
-import ProjectManagement from "./pages/ProjectManagement";
-import TechnologyStack from "./pages/TechnologyStack";
-import InitialDesign from "./pages/InitialDesign";
-import Implementation from "./pages/Implementation";
+import Methodology from "./pages/Methodology";
+import FeaturesAPI from "./pages/FeaturesAPI";
+import DeploymentImplementation from "./pages/DeploymentImplementation";
+import TestingFeedback from "./pages/TestingFeedback";
+import Architecture from "./pages/Architecture";
+
+
+import DiscussionsMeetings from "./pages/DiscussionsMeetings";
 
 function App() {
   return (
@@ -20,14 +20,12 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/version-control" element={<VersionControl />} />
-            <Route path="/work-planning" element={<WorkPlanning />} />
-            <Route path="/development-guides" element={<DevelopmentGuides />} />
-            <Route path="/git-methodology" element={<GitMethodology />} />
-            <Route path="/project-management" element={<ProjectManagement />} />
-            <Route path="/technology-stack" element={<TechnologyStack />} />
-            <Route path="/initial-design" element={<InitialDesign />} />
-            <Route path="/implementation" element={<Implementation />} />
+            <Route path="/methodology" element={<Methodology />} />
+            <Route path="/features-api" element={<FeaturesAPI />} />
+            <Route path="/architecture" element={<Architecture />} />
+            <Route path="/testing-feedback" element={<TestingFeedback />} />
+            <Route path="/deployment-implementation" element={<DeploymentImplementation />} />
+            <Route path="/discussions-meetings" element={<DiscussionsMeetings />} />
           </Routes>
         </div>
       </div>
@@ -36,3 +34,25 @@ function App() {
 }
 
 export default App;
+
+/*
+import VersionControl from "./pages/VersionControl";
+import WorkPlanning from "./pages/WorkPlanning";
+import DevelopmentGuides from "./pages/DevelopmentGuides";
+import GitMethodology from "./pages/GitMethodology";
+import ProjectManagement from "./pages/ProjectManagement";
+import TechnologyStack from "./pages/TechnologyStack";
+import InitialDesign from "./pages/InitialDesign";
+import Implementation from "./pages/Implementation";
+
+old paths if needed, but all of them have been removed.
+
+<Route path="/version-control" element={<VersionControl />} />
+<Route path="/work-planning" element={<WorkPlanning />} />
+<Route path="/development-guides" element={<DevelopmentGuides />} />
+<Route path="/git-methodology" element={<GitMethodology />} />
+<Route path="/project-management" element={<ProjectManagement />} />
+<Route path="/technology-stack" element={<TechnologyStack />} />
+<Route path="/initial-design" element={<InitialDesign />} />
+<Route path="/implementation" element={<Implementation />} />
+*/

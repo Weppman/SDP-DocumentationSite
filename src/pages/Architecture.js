@@ -1,6 +1,11 @@
-function TechnologyStack() {
+import Sidebar from "../components/Sidebar";
+
+function Architecture() {
   return (
-    <div className="max-w-3xl mx-auto mt-8">
+    <main className="max-w-3xl mx-auto mt-8">
+      <h1 className="text-3xl font-bold text-green-700 mb-0">Architecture</h1>
+      <Sidebar />
+      
       <h2 className="text-2xl font-bold text-green-700 mb-4">Technology Stack</h2>
       <p className="mb-6">
         Our project is <strong>fully hosted on Railway</strong>, providing a seamless deployment 
@@ -14,8 +19,8 @@ function TechnologyStack() {
       <p className="italic text-green-800">
         Message: Using one platform for deployment simplified CI/CD.
       </p>
-    </div>
+    </main>
   );
 }
 
-export default TechnologyStack;
+export default Architecture;
