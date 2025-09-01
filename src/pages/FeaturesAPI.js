@@ -12,9 +12,6 @@ function FeaturesAPI() {
         The chosen color scheme features <strong>white and light green</strong> tones, promoting readability 
         and a natural feel that matches our project’s hiking theme.
       </p>
-      <p className="italic text-green-800">
-        Message: Simple design keeps focus on content and usability.
-      </p>
     </main>
   );
 }
