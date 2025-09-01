@@ -17,6 +17,7 @@ function Home() {
     { name: "Testing/Feedback", path: "/testing-feedback" },
     { name: "Deployment/Implementation", path: "/deployment-implementation" },
     { name: "Discussions/Meetings", path: "/discussions-meetings" },
+    {name: "Third-Party Code", path: "/third-party-code"},
   ];
 
   return (
