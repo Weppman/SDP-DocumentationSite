@@ -7,7 +7,6 @@ import FeaturesAPI from "./pages/FeaturesAPI";
 import DeploymentImplementation from "./pages/DeploymentImplementation";
 import TestingFeedback from "./pages/TestingFeedback";
 import Architecture from "./pages/Architecture";
-import ThirdPartyCode from "./pages/ThirdPartyCode";
 
 
 import DiscussionsMeetings from "./pages/DiscussionsMeetings";
@@ -27,7 +26,6 @@ function App() {
             <Route path="/testing-feedback" element={<TestingFeedback />} />
             <Route path="/deployment-implementation" element={<DeploymentImplementation />} />
             <Route path="/discussions-meetings" element={<DiscussionsMeetings />} />
-            <Route path="/third-party-code" element={<ThirdPartyCode />} />
           </Routes>
         </div>
       </div>
