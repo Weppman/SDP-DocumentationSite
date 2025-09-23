@@ -202,7 +202,7 @@ function DiscussionsMeetings() {
       </p>
 
       <h2 className="text-2xl font-bold text-green-700 mb-4">Sprint 2</h2>
-      <h3 className="text-xl font-bold text-green-700">2025-08-19 (Team)</h3>
+      <h3 className="text-xl font-bold text-green-700">2025-08-19 (Stakeholder)</h3>
       <p className="mb-6">
         <img
           src="/media/discussionsmeetings/20250819%20WhatsApp%20at%2015.48.09.jpeg"
@@ -339,7 +339,135 @@ function DiscussionsMeetings() {
             </ul>
           </li>
         </ul>
-      <h2 className="text-2xl font-bold text-green-700 mb-4">Sprint 3</h2>
+            <h2 className="text-2xl font-bold text-green-700 mb-4">Sprint 3</h2>
+      <h3 className="text-xl font-bold text-green-700">2025-09-02 (Team)</h3>
+      <ul className="list-disc pl-6 mb-6">
+        <li>
+          <strong>Work Assignments:</strong>
+          <ul className="list-[circle] pl-6">
+            <li><strong>Joshua:</strong> Clerk-UI integration for proper backend functionality.</li>
+            <li><strong>Nathan:</strong> Complete Goals feature, implement UI changes, migrate from frontend SQL to API.</li>
+            <li><strong>Justin:</strong> Fix goals functionality, friends page implementation, migrate to API.</li>
+            <li><strong>Dewald:</strong> Test Nathan's functions, create additional diagrams.</li>
+            <li><strong>Niel:</strong> Finish documentation, create diagrams, improve UX.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Technical Decisions:</strong>
+          <ul className="list-[circle] pl-6">
+            <li>Map functionality rework planned.</li>
+            <li>Query optimization from UI - grouping UID for single query to improve Activity Feed performance.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Other Notes:</strong>
+          <ul className="list-[circle] pl-6">
+            <li>Stakeholder requested documentation of testing methodology and fully expanded feature list with explanations.</li>
+            <li>Justification for Railway.app needed in documentation.</li>
+            <li>Delete Account feature not properly implemented - requires attention.</li>
+            <li>Improve scaffolding for External API integration.</li>
+          </ul>
+        </li>
+      </ul>
+      <h3 className="text-xl font-bold text-green-700">2025-09-17 (Chatlog)</h3>
+      <ul className="list-disc pl-6 mb-6">
+        <li>
+          <strong>Work Assignments:</strong>
+          <ul className="list-[circle] pl-6">
+            <li><strong>Niel:</strong> Requested testing methodology breakdown and user test runs for documentation.</li>
+            <li><strong>Nathan:</strong> Working on backend migration - moving SQL from frontend to backend.</li>
+            <li><strong>Justin:</strong> Confirmed local development setup is working.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Technical Decisions:</strong>
+          <ul className="list-[circle] pl-6">
+            <li>Backend functions should receive data as JSON instead of direct SQL.</li>
+            <li>Local development: run backend with npm, connect frontend to localhost URL.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Other Notes:</strong>
+          <ul className="list-[circle] pl-6">
+            <li>Nathan encountered CORS errors during local development.</li>
+            <li>Follow table issue discovered: one ID is integer, other is string.</li>
+            <li>Nathan successfully pushed backend fixes and updated tests.</li>
+            <li>Joshua fixed the Follow Table data type inconsistency.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3 className="text-xl font-bold text-green-700">2025-09-18 (Chatlog)</h3>
+      <ul className="list-disc pl-6 mb-6">
+        <li>
+          <strong>Technical Decisions:</strong>
+          <ul className="list-[circle] pl-6">
+            <li>Need to add "madeby" field to planner_table to track who created hikes.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Other Notes:</strong>
+          <ul className="list-[circle] pl-6">
+            <li>Nathan identified gap in invite functionality - no way to track who initially planned hikes.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3 className="text-xl font-bold text-green-700">2025-09-19 (Chatlog)</h3>
+      <ul className="list-disc pl-6 mb-6">
+        <li>
+          <strong>Technical Decisions:</strong>
+          <ul className="list-[circle] pl-6">
+            <li>Added "madeby" column to planner_table instead of hike table for better data structure.</li>
+            <li>Bug tracking centralized to GitHub Issues for better organization.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Other Notes:</strong>
+          <ul className="list-[circle] pl-6">
+            <li>Completed_hike_table auto-increment issue discovered - PK errors when leaving ID blank.</li>
+            <li>Joshua confirmed database PK uniqueness but issue persisted in application.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3 className="text-xl font-bold text-green-700">2025-09-20 (Chatlog)</h3>
+      <ul className="list-disc pl-6 mb-6">
+        <li>
+          <strong>Other Notes:</strong>
+          <ul className="list-[circle] pl-6">
+            <li>Completed_hike_table PK issue continues - manual entry required for inserts to work.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3 className="text-xl font-bold text-green-700">2025-09-21 (Chatlog)</h3>
+      <ul className="list-disc pl-6 mb-6">
+        <li>
+          <strong>Work Assignments:</strong>
+          <ul className="list-[circle] pl-6">
+            <li><strong>Nathan:</strong> Completed backend migration work.</li>
+            <li><strong>Dewald:</strong> Assigned to work on Achievements integration, Map API, and testing.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Other Notes:</strong>
+          <ul className="list-[circle] pl-6">
+            <li>Completed_hike_table PK issue resolved spontaneously - suspected Railway platform instability.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3 className="text-xl font-bold text-green-700">2025-09-22 (Chatlog)</h3>
+      <ul className="list-disc pl-6 mb-6">
+        <li>
+          <strong>Work Assignments:</strong>
+          <ul className="list-[circle] pl-6">
+            <li><strong>Joshua:</strong> Taking responsibility for security audit document for npm.</li>
+          </ul>
+        </li>
+      </ul>
+
       <h2 className="text-2xl font-bold text-green-700 mb-4">Sprint 4</h2>
     </main>
   );
