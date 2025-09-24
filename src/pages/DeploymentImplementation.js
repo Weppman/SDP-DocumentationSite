@@ -168,6 +168,46 @@ function DeploymentImplementation() {
           </tbody>
         </table>
       </section>
+
+      <h2 className="text-2xl font-bold text-green-700 mb-4">Security</h2>
+      <p className="mb-4 ">
+        Two supply-chain attacks were launched on npm in September of 2025, affecting deployment. 
+        Below is a security audit done on 2025-09-24 to verify the integrity of the software.
+      </p>
+      <ul className="list-disc pl-6 mb-6">
+        <li>
+          <a href="/media/deploymentimplementation/2025-09-24 Security Audit Report.pdf"
+          className="font-mono text-blue-600 hover:underline hover:text-blue-800 transition-colors"
+          target="_blank"
+          rel="noopener noreferrer">
+            2025-09-24 Security Audit Report.pdf
+          </a>
+        </li>
+        <li>
+          <a href="/media/deploymentimplementation/dependencies-backend-2025-09-24T16-53-04-701Z.json"
+          className="font-mono text-blue-600 hover:underline hover:text-blue-800 transition-colors"
+          target="_blank"
+          rel="noopener noreferrer">
+            dependencies-backend-2025-09-24T16-53-04-701Z.json
+          </a>
+        </li>
+        <li>
+          <a href="/media/deploymentimplementation/dependencies-frontend-2025-09-24T16-53-04-714Z.json"
+          className="font-mono text-blue-600 hover:underline hover:text-blue-800 transition-colors"
+          target="_blank"
+          rel="noopener noreferrer">
+            dependencies-frontend-2025-09-24T16-53-04-714Z.json
+          </a>
+        </li>
+        <li>
+          <a href="/media/deploymentimplementation/security-audit.js"
+          className="font-mono text-blue-600 hover:underline hover:text-blue-800 transition-colors"
+          target="_blank"
+          rel="noopener noreferrer">
+            security-audit.js
+          </a> (code used to audit)
+        </li>
+      </ul>
     </main>
   );
 }

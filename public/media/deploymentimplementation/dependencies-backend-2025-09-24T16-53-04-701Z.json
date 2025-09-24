@@ -1,0 +1,64 @@
+{
+  "scanDate": "2025-09-24T16:53:04.703Z",
+  "project": "backend",
+  "totalDependencies": 8,
+  "vulnerablePackages": 0,
+  "allPackages": [
+    {
+      "package": "@clerk/clerk-sdk-node",
+      "version": "4.13.23",
+      "path": "@clerk/clerk-sdk-node",
+      "depth": 0,
+      "type": "direct"
+    },
+    {
+      "package": "@clerk/express",
+      "version": "1.7.21",
+      "path": "@clerk/express",
+      "depth": 0,
+      "type": "direct"
+    },
+    {
+      "package": "cors",
+      "version": "2.8.5",
+      "path": "cors",
+      "depth": 0,
+      "type": "direct"
+    },
+    {
+      "package": "dotenv",
+      "version": "17.2.1",
+      "path": "dotenv",
+      "depth": 0,
+      "type": "direct"
+    },
+    {
+      "package": "express",
+      "version": "5.1.0",
+      "path": "express",
+      "depth": 0,
+      "type": "direct"
+    },
+    {
+      "package": "jest",
+      "version": "30.0.5",
+      "path": "jest",
+      "depth": 0,
+      "type": "dev"
+    },
+    {
+      "package": "pg",
+      "version": "8.16.3",
+      "path": "pg",
+      "depth": 0,
+      "type": "direct"
+    },
+    {
+      "package": "supertest",
+      "version": "7.1.4",
+      "path": "supertest",
+      "depth": 0,
+      "type": "dev"
+    }
+  ]
+}
