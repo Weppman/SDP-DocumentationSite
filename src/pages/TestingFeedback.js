@@ -16,6 +16,7 @@ function TestingFeedback() {
         empty
       </p>
       <h2 className="text-2xl font-bold text-green-700 mb-4">User Feedback</h2>
+
       <h3 className="text-xl font-bold text-green-700 mb-4">2025-08-31 - Local FrontEnd No BackEnd (Internal)</h3>
       <p className="text-xl font-bold">
         Summary
@@ -101,6 +102,86 @@ function TestingFeedback() {
           <strong>Low priority:</strong>
           <ul className="list-[circle] pl-6">
             <li>Improve user flow (know where to logically find hikes)</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3 className="text-xl font-bold text-green-700 mb-4">2025-09-27 - Deployed User Test (External)</h3>
+      <p className="text-xl font-bold">
+        Summary
+      </p>
+      <p className="mb-6">
+        The test was conducted on 2025-09-27 by an external user on the deployed master branch of the front-end, commit <a
+          href="https://github.com/Weppman/SDP-FrontEnd/commit/120bc55"
+          className="text-blue-600 hover:underline hover:text-blue-800 transition-colors"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          120bc55
+        </a>. The user explored various features and identified several usability issues
+        related to form validation, UI consistency, and feature clarity. Remarks taken from user.
+      </p>
+      <p className="text-xl font-bold">
+        Findings
+      </p>
+      <ul className="list-disc pl-6 mb-6">
+        <li>
+          <strong>Add Activity:</strong> Post button does not protect against double submissions.
+        </li>
+        <li>
+          <strong>Plan Hike:</strong> Filters were free text with no indication as to valid values. Difficulty should be a dropdown
+          selection list or predefined values and Duration should be a range of time using time selectors as
+          guessing an exact time makes it non-friendly.
+        </li>
+        <li>
+          <strong>Plan Hike:</strong> Invite button just shows modal with “Invite Friends”. How do you add friends if none are
+          shown? A guide here as to how to grow a friend list would be helpful. How do you add hikes to the
+          Plan Hike list if you plan to do one not present in the list?
+        </li>
+        <li>
+          <strong>Log Book:</strong> Input fields need to be consistent across the site. Date pickers should be used consistently
+          when requiring date input. Text fields allow for inconsistent/invalid input values. Same with edit option
+          in completed hikes, time select should be used to prevent random garbage input.
+        </li>
+        <li>
+          <strong>Profile:</strong> Had 3 pinned hikes on a newly created profile? Who put these here? Achievements was not
+          correct i.e. I completed a hike, but the First Hike still shows 0/1 complete. Same with Five Hike. Counter
+          at the top did not update. I unpinned the 3 hikes, but it still showed 3 hikes pinned. When I refreshed
+          the page, the Profile page came back with the 3 pinned hikes again. How do you add to the pinned list?
+          Editting of goals should not cause buttons to change size. Rather place edit fields below the buttons to
+          prevent resizing.
+        </li>
+        <li>
+          <strong>Search Users:</strong> Search filter doesn’t seem to work intuitively. Typed J and it came up with no users even
+          though there was a Justin and Joshua. Had to type full name and hit search before it showed result.
+          Better to have progressive searches that filter as you type matching on either starts with or contains
+          searches.
+        </li>
+      </ul>
+      <p className="text-xl font-bold">
+        Actions
+      </p>
+      <ul className="list-disc pl-6 mb-6">
+        <li>
+          <strong>High priority:</strong>
+          <ul className="list-[circle] pl-6">
+            <li>Add double-submission protection to activity posts</li>
+            <li>Fix profile pinned hikes and achievement counters</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Medium priority:</strong>
+          <ul className="list-[circle] pl-6">
+            <li>Replace free-text filters with dropdowns and time selectors</li>
+            <li>Improve friend invitation and hike planning flow</li>
+            <li>Standardize input fields with date/time pickers</li>
+            <li>Implement progressive search for user lookup</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Low priority:</strong>
+          <ul className="list-[circle] pl-6">
+            <li>Improve button layout during goal editing to prevent resizing</li>
           </ul>
         </li>
       </ul>
