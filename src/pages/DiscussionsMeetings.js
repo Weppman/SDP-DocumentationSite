@@ -468,6 +468,67 @@ function DiscussionsMeetings() {
         </li>
       </ul>
 
+      <h3 className="text-xl font-bold text-green-700">2025-09-23 (Chatlog)</h3>
+      <ul className="list-disc pl-6 mb-6">
+        <li>
+          <strong>Work Assignments:</strong>
+          <ul className="list-[circle] pl-6">
+            <li><strong>Joshua:</strong> Implemented API key security for backend access; began security audit and user context for page access control.</li>
+            <li><strong>Justin:</strong> Assigned to remove "Avid Hiker" bio section and rework "Pinned Hikes" feature.</li>
+            <li><strong>Niel:</strong> Focused on UI/UX improvements and testing assistance where needed.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Technical Decisions:</strong>
+          <ul className="list-[circle] pl-6">
+            <li>Backend now requires API key header for all requests.</li>
+            <li>Pinned hikes to be stored as a JSON object in the Users table, limited to a maximum of 3 hikes.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Other Notes:</strong>
+          <ul className="list-[circle] pl-6">
+            <li>Security measures implemented to meet rubric requirements.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3 className="text-xl font-bold text-green-700">2025-09-24 (Chatlog)</h3>
+      <ul className="list-disc pl-6 mb-6">
+        <li>
+          <strong>Work Assignments:</strong>
+          <ul className="list-[circle] pl-6">
+            <li><strong>Joshua:</strong> Completed security audit; no vulnerabilities found. Prepared JSON dependency report and audit documentation.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Technical Decisions:</strong>
+          <ul className="list-[circle] pl-6">
+            <li>Dependency list and audit script to be made available for download on documentation site.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3 className="text-xl font-bold text-green-700">2025-09-26 (Chatlog)</h3>
+      <ul className="list-disc pl-6 mb-6">
+        <li>
+          <strong>Work Assignments:</strong>
+          <ul className="list-[circle] pl-6">
+            <li><strong>Nathan:</strong> Assigned to collect user feedback.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3 className="text-xl font-bold text-green-700">2025-09-27 (UAT Report)</h3>
+      <ul className="list-disc pl-6 mb-6">
+        <li>
+          <strong>Other Notes:</strong>
+          <ul className="list-[circle] pl-6">
+            <li>User feedback collected and incorporated into documentation.</li>
+          </ul>
+        </li>
+      </ul>
+
       <h2 className="text-2xl font-bold text-green-700 mb-4">Sprint 4</h2>
     </main>
   );
