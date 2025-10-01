@@ -529,7 +529,57 @@ function DiscussionsMeetings() {
         </li>
       </ul>
 
+      <h3 className="text-xl font-bold text-green-700">2025-09-30 (Team)</h3>
+      <ul className="list-disc pl-6 mb-6">
+        <li>
+          <strong>Work Assignments:</strong>
+          <ul className="list-[circle] pl-6">
+            <li><strong>Justin:</strong> Pinned Hike feature to be fully implemented, profile pictures to be shown in Search, fix Search for partial keyword search, adjust Statistics page colours.</li>
+            <li><strong>Niel:</strong> UX improvements, Semantic HTML cleanup, Documentation, add Test ID labels to all tests to cross reference with documentation, fix generic React App header in browser tabs.</li>
+            <li><strong>Dewald:</strong> Map API implementation, Achievements features implementation.</li>
+            <li><strong>Nathan:</strong> Fix South African time display issues.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Technical Decisions:</strong>
+          <ul className="list-[circle] pl-6">
+            <li>Date/Time picker is inconsistent; considering Bootstrap Date Picker for cross-platform consistency.</li>
+            <li>Need to add description/notes field to hikes feature.</li>
+            <li>Loading indicator needed for search functionality.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Other Notes:</strong>
+          <ul className="list-[circle] pl-6">
+            <li>Production data needed for testing.</li>
+            <li>Duration in Completed Hike had issues, but seemed to be because of artificially inserted data in an older database.</li>
+          </ul>
+        </li>
+      </ul>
+
       <h2 className="text-2xl font-bold text-green-700 mb-4">Sprint 4</h2>
+      <h3 className="text-xl font-bold text-green-700">2025-09-30 (Stakeholder)</h3>
+      <ul className="list-disc pl-6 mb-6">
+        <li>
+          <strong>Technical Decisions:</strong>
+          <ul className="list-[circle] pl-6">
+            <li>Add text wrapping and minimum height restrictions to Activity Feed and Goals components.</li>
+            <li>The ability to set multiple active concurrent hikes was raised as a concern, but may remain as user-side issue without prevention mechanisms.</li>
+            <li>Improve search loading indicators.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Other Notes:</strong>
+          <ul className="list-[circle] pl-6">
+            <li>Upcoming Hikes invite limitation noted - only during creation, not after.</li>
+            <li>Description/notes field identified as missing feature for hikes.</li>
+            <li>Stakeholder satisfied with audit content despite formatting concerns.</li>
+            <li>Made repeated note that documentation should include decisions and justifications for not testing certain functionality and also ignoring certain stakeholder/user feedback.</li>
+            <li>Stakeholder noted to include Notion link in documentation for Methodology reasons.</li>
+            <li>More user feedback needed from multiple users.</li>
+          </ul>
+        </li>
+      </ul>
     </main>
   );
 }
