@@ -18,7 +18,7 @@ function Methodology() {
       <h2 className="text-2xl font-bold text-green-700 mb-4">Project Management Methodology</h2>
       <p className="mb-6">
         We adopted a <strong>Scrum-inspired methodology</strong>, holding 
-        <strong> four meetings per week</strong>. These check-ins allowed us to track progress, 
+        four meetings per week. These check-ins allowed us to track progress, 
         identify blockers, and ensure the team stayed aligned.
       </p>
       <p className="mb-6">
@@ -44,6 +44,23 @@ function Methodology() {
         For new features, branches labelled as "FEATURE-[featureName]".
       </p>
       <p className="mb-6">
+        Commits uses a simplified version of <a
+          href="https://www.conventionalcommits.org/en/v1.0.0/"
+          className="text-blue-600 hover:underline hover:text-blue-800 transition-colors"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Conventional Commits
+        </a>, which prefixes the commit at the start with a standardized keyword. The keywords include:
+        <ul className="list-disc ml-6 mt-2">
+          <li><strong>FEATURE:</strong> - Adding new features</li>
+          <li><strong>UPDATE:</strong> - Updating existing code blocks</li>
+          <li><strong>ADD:</strong> - Adding onto existing functionality</li>
+          <li><strong>DELETE:</strong> - Removing code or files</li>
+          <li><strong>FIX:</strong> - Fixing bugs and errors</li>
+        </ul>
+      </p>
+      <p className="mb-6">
         For more information regarding <strong>Git Flow</strong>, see <a
           href="https://www.gitkraken.com/learn/git/git-flow"
           className="text-blue-600 hover:underline hover:text-blue-800 transition-colors"
@@ -53,17 +70,7 @@ function Methodology() {
           https://www.gitkraken.com/learn/git/git-flow
         </a>.
       </p>
-      <p className="mb-6">
-        Commits uses a simplified version of <a
-          href="https://www.conventionalcommits.org/en/v1.0.0/"
-          className="text-blue-600 hover:underline hover:text-blue-800 transition-colors"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Conventional Commits
-        </a>, which prefixes the commit with
-        "FEATURE:" for new implementations, and "FIX:" for bugs, minor changes, etc. 
-      </p>
+      
       <p className="italic text-green-800">
         Message: Consistent workflows minimize merge conflicts and deployment risks.
       </p>
