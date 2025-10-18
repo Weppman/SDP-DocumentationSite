@@ -13,7 +13,21 @@ function TestingFeedback() {
       </p>
       <h2 className="text-2xl font-bold text-green-700 mb-4">Automated Testing</h2>
       <p className="mb-6">
-        Jest is the primary framework used for automated testing. Using GitHub Actions, it runs all the tests when a commit is pushed to any branch.
+        Jest is the primary framework used for automated testing. Using GitHub Actions, it runs all the tests when a commit is pushed to any branch. The code coverage may be found in the logs here for front-end <a
+          href="https://github.com/Weppman/SDP-FrontEnd/actions/workflows/jest.yml"
+          className="font-mono text-blue-600 hover:underline hover:text-blue-800 transition-colors"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          https://github.com/Weppman/SDP-FrontEnd/actions/workflows/jest.yml
+        </a> and back-end <a
+          href="https://github.com/Weppman/SDP-BackEnd/actions/workflows/test.yml"
+          className="font-mono text-blue-600 hover:underline hover:text-blue-800 transition-colors"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          https://github.com/Weppman/SDP-BackEnd/actions/workflows/test.yml
+        </a>.
       </p>
         <section className="mb-6 overflow-x-auto">
           <table className="min-w-full border-collapse border border-gray-300">
