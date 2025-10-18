@@ -580,6 +580,97 @@ function DiscussionsMeetings() {
           </ul>
         </li>
       </ul>
+
+      <h3 className="text-xl font-bold text-green-700">2025-10-13 (Chatlog)</h3>
+      <ul className="list-disc pl-6 mb-6">
+        <li>
+          <strong>Work Assignments:</strong>
+          <ul className="list-[circle] pl-6">
+            <li><strong>Joshua:</strong> Started working on documentation draft.</li>
+            <li><strong>Nathan:</strong> Waiting on Dewald to complete Map API before final UI tweaks.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3 className="text-xl font-bold text-green-700">2025-10-15 (Chatlog)</h3>
+      <ul className="list-disc pl-6 mb-6">
+        <li>
+          <strong>Work Assignments:</strong>
+          <ul className="list-[circle] pl-6">
+            <li><strong>Nathan:</strong> Reminded Dewald about Map API completion deadline.</li>
+            <li><strong>Joshua:</strong> Completed first draft of documentation (~13 pages).</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Technical Decisions:</strong>
+          <ul className="list-[circle] pl-6">
+            <li>Team discussed missing project sections: challenges, future development, evaluation.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Other Notes:</strong>
+          <ul className="list-[circle] pl-6">
+            <li>Dewald confirmed Map API was in dev branch, using JSON coordinates object.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3 className="text-xl font-bold text-green-700">2025-10-16 (Chatlog)</h3>
+      <ul className="list-disc pl-6 mb-6">
+        <li>
+          <strong>Work Assignments:</strong>
+          <ul className="list-[circle] pl-6">
+            <li><strong>Dewald:</strong> Completed Map API frontend implementation, needs to move to backend.</li>
+            <li><strong>Nathan:</strong> Assigned to work on UI integration for Map API across Plan Hikes, Upcoming Hikes, and Completed Hikes.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Technical Decisions:</strong>
+          <ul className="list-[circle] pl-6">
+            <li>Map coordinates stored as JSON object separate from location names.</li>
+            <li>Map display to be added to multiple hike views.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3 className="text-xl font-bold text-green-700">2025-10-17 (Chatlog)</h3>
+      <ul className="list-disc pl-6 mb-6">
+        <li>
+          <strong>Work Assignments:</strong>
+          <ul className="list-[circle] pl-6">
+            <li><strong>Joshua:</strong> Finalizing documentation, requested tester account details.</li>
+            <li><strong>Dewald:</strong> Working on moving Map API to backend and testing.</li>
+            <li><strong>Nathan:</strong> Fixed UI tests, pushed Map API integration to main.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Technical Decisions:</strong>
+          <ul className="list-[circle] pl-6">
+            <li>New API key required for frontend.</li>
+            <li>Backend API security implementation completed.</li>
+          </ul>
+        </li>
+        <li>
+          <strong>Other Notes:</strong>
+          <ul className="list-[circle] pl-6">
+            <li>Documentation reached ~22 pages.</li>
+            <li>Main branch deployment issues occurred due to direct push with failing tests.</li>
+            <li>Team discussed database cleanup for production data.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <h3 className="text-xl font-bold text-green-700">2025-10-18 (Chatlog)</h3>
+      <ul className="list-disc pl-6 mb-6">
+        <li>
+          <strong>Work Assignments:</strong>
+          <ul className="list-[circle] pl-6">
+            <li><strong>Niel:</strong> Editing/reviewing the report draft and ensuring consistency between the report and documentation.</li>
+            <li><strong>Justin:</strong> Fixed Pinned Hikes functionality.</li>
+            <li><strong>Nathan:</strong> Fixed backend query issue for Pinned Hikes state persistence.</li>
+          </ul>
+        </li>
+      </ul>
     </main>
   );
 }
