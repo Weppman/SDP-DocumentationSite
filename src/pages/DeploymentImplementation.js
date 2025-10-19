@@ -165,6 +165,33 @@ function DeploymentImplementation() {
                 </a>
               </td>
             </tr>
+
+            <tr className="hover:bg-green-50">
+              <td className="px-4 py-2 border font-semibold">
+                Google Maps Embed API, iframe
+              </td>
+              <td className="px-4 py-2 border">
+                Display map location of a hike
+              </td>
+              <td className="px-4 py-2 border">
+                <code>planHike.js</code> and <code>logbook.js</code> - location visualization.
+              </td>
+              <td className="px-4 py-2 border">
+                - Free tier with generous usage limits <br />
+                - Responsive design with full-width container <br />
+                - Direct coordinate-based positioning <br />
+                - Mobile-friendly embedded experience
+              </td>
+              <td className="px-4 py-2 border text-blue-600 underline">
+                <a
+                  href="https://developers.google.com/maps/documentation/embed/get-started"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Google Maps Embed Docs
+                </a>
+              </td>
+            </tr>
           </tbody>
         </table>
       </section>
