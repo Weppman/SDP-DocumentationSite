@@ -26,7 +26,7 @@ const Sidebar = () => {
   }, []);
 
   return (
-    <aside className="w-64 p-4 border-r h-full top-8 bg-white overflow-y-auto">
+    <aside className="w-88 p-4 border-r h-full top-8 bg-white overflow-y-auto">
       <ul>
         {headers.map((header) => {
           const levelToMargin = {
