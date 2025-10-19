@@ -21,7 +21,7 @@ function FeaturesAPI() {
         <p className="mb-6">On the home page, an Activity Feed shows the recent posts made by all users. On the left side is a simple input box that allows you to make your own post with some title and body content, allowing you to share updates with your friends .</p>
         <p className="mb-6"></p>
         <img
-          src="/media/featuresapi/20250930-home-page.png"
+          src="/media/featuresapi/20251019-home-page.png"
           alt="Home Page"
           className="mb-6 border rounded shadow"
           style={{ maxWidth: "100%" }}
@@ -30,16 +30,22 @@ function FeaturesAPI() {
         <h3 className="text-xl font-bold text-green-600">Plan Hike</h3>
         <p className="mb-6">When planning for a hike, a list of trails are shown. Clicking on any one of them expands the dropdown to show details about the route. The filter options on the left side can be used to search for specific types of routes on name, location, difficulty, duration and description. After selecting a hike, an option is provided to "Plan Hike" where a user enters a date and time for a upcoming hike. Afterwards, they can either just plan it, or they can invite other friends to the hike. After completing, the hikes are moved to Logbook.</p>
         <img
-          src="/media/featuresapi/20250930-plan-hike.png"
+          src="/media/featuresapi/20251019-plan-hike.png"
           alt="Plan Hike Page"
           className="mb-6 border rounded shadow"
           style={{ maxWidth: "100%" }}
         />
 
         <h3 className="text-xl font-bold text-green-600">Logbook</h3>
-        <p className="mb-6">On the Logbook page, there are 2 categories of hikes. The first are all planned upcoming hikes, which has a start button attached for when a user starts it. After starting a hike, the hike can be ended and then moved to Completed Hikes. The Completed Hike contains a similar list, although includes an additional option to adjust the time it took to complete the hike if the internal timing was inaccurate. Like the Plan Hike page, there are filter options for name and date to search for any particular ones.</p>
+        <p className="mb-6">On the Logbook page, there are 2 categories of hikes. The first are all planned upcoming hikes, which has a start button attached for when a user starts it. After starting a hike, the hike can be ended and then moved to Completed Hikes. The Completed Hike contains a similar list, although includes an additional option to adjust the time it took to complete the hike if the internal timing was inaccurate, as well as pinning any particular hikes to your profile. Like the Plan Hike page, there are filter options for name and date to search for any particular ones.</p>
         <img
-          src="/media/featuresapi/20250930-logbook.png"
+          src="/media/featuresapi/20251019-logbook1.png"
+          alt="Logbook Page"
+          className="mb-6 border rounded shadow"
+          style={{ maxWidth: "100%" }}
+        />
+        <img
+          src="/media/featuresapi/20251019-logbook2.png"
           alt="Logbook Page"
           className="mb-6 border rounded shadow"
           style={{ maxWidth: "100%" }}
@@ -48,25 +54,25 @@ function FeaturesAPI() {
         <h3 className="text-xl font-bold text-green-600">Profile</h3>
         <p className="mb-6">On the user profile page, you can see basic information about your profile including a list of pinned hikes. Below it are multiple tabs for different information. The Achievement tab is for achievements which automatically fill up on their own. The Goals tab allow users to set their own goals with title and description. After seeing a goal, a user can edit, delete, and mark the goal as done. Goals marked as complete go to the Completed tab which allows you to share it with friends on other platforms. The Statistics tab showcases a summary of hikes, achievements, and goals. The Following tab shows which other users you follow, with the option to unfollow. </p>
         <img
-          src="/media/featuresapi/20250930-profile.png"
+          src="/media/featuresapi/20251019-profile1.png"
           alt="Profile Page on Achievements tab"
           className="mb-6 border rounded shadow"
           style={{ maxWidth: "100%" }}
         />
         <img
-          src="/media/featuresapi/20250930-profile2.png"
+          src="/media/featuresapi/20251019-profile2.png"
           alt="Profile Page on Goals tab"
           className="mb-6 border rounded shadow"
           style={{ maxWidth: "100%" }}
         />
         <img
-          src="/media/featuresapi/20250930-profile3.png"
+          src="/media/featuresapi/20251019-profile3.png"
           alt="Profile Page on Completed tab"
           className="mb-6 border rounded shadow"
           style={{ maxWidth: "100%" }}
         />
         <img
-          src="/media/featuresapi/20250930-profile4.png"
+          src="/media/featuresapi/20251019-profile4.png"
           alt="Profile Page on Statistic tab"
           className="mb-6 border rounded shadow"
           style={{ maxWidth: "100%" }}
@@ -81,7 +87,7 @@ function FeaturesAPI() {
         <h3 className="text-xl font-bold text-green-600">Search</h3>
         <p className="mb-6">On a clean search, it shows suggested users, with options to both view their profiles (to see a page similar to one's own profile) as well as the ability to follow. Using search can narrow it down to a specific user.</p>
         <img
-          src="/media/featuresapi/20250930-search.png"
+          src="/media/featuresapi/20251019-search.png"
           alt="Search Page"
           className="mb-6 border rounded shadow"
           style={{ maxWidth: "100%" }}
