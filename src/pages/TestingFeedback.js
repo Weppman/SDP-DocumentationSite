@@ -527,6 +527,50 @@ function TestingFeedback() {
           </table>
         </section>
 
+      <h2 className="text-2xl font-bold text-green-700 mb-4">Not Covered in Automatic Testing</h2>
+      <p className="mb-4">
+        <strong>Backend Coverage Gaps:</strong> The current test suite provides solid coverage for basic API routes,
+         user data retrieval, and profile features, but lacks testing for several critical real-time hiking operations
+          such as hike planning and management endpoints (<code>/plan-hike</code>, <code>/upcoming-hikes</code>, 
+          <code>/pending-hikes</code>), real-time hike operations (<code>/start-hike</code>, <code>/stop-hike</code>), and the 
+          activity feed system. The major reason for the gaps are due to the technical complexity of mocking a database for 
+          each of the API routes, which become time consuming endeavours to try and model complex transactions and multi-table
+          operations whilst also accounting for timers and Clerk intergration. It was decided it was better to spend time on
+          developing other features and manually checking the database rather than pain-stakining setting up tests.    
+      </p>
+
+            <p className="mb-4">
+        <strong>Profile & Stats Component Coverage:</strong> The frontend test suite provides comprehensive testing 
+        for core profile functionality including goal management, tab navigation, and friend interactions, along with 
+        statistical calculations and chart data processing. However, complex visual chart interactions, cross-component 
+        state synchronization, and real-time data flow between profile sections remain largely untested due to the 
+        inherent challenges of mocking canvas-based chart libraries and complex React state dependencies.
+      </p>
+
+      <p className="mb-4">
+        <strong>Untested User Experience Scenarios:</strong> Significant testing gaps exist in areas of accessibility compliance,
+         mobile-responsive interactions, performance optimization with large datasets, and comprehensive error recovery scenarios.
+          These limitations stem from the difficulty of testing visual rendering, third-party library integrations, and complex
+          user interaction patterns that require specialized testing tools beyond Jest's unit testing capabilities, making them
+          better suited for integration and visual regression testing strategies.
+      </p>
+
+      <p className="mb-4">
+        <strong>Frontend Component Integration Gaps:</strong> While the existing tests cover individual component functionality
+        thoroughly, several integration scenarios remain untested. Complex user workflows that span multiple components—such as
+        planning a hike, inviting friends, and tracking completion—lack end-to-end validation. Additionally, error boundary handling,
+        offline behavior, and third-party service failures (Clerk authentication, external APIs) are not comprehensively tested due to
+        the complexity of mocking these integrated systems.
+      </p>
+
+      <p className="mb-6">
+        <strong>Visual and Interactive Elements:</strong> The test suite does not cover visual aspects of the application including responsive
+        design across different screen sizes, CSS animation performance, or visual regression detection. Interactive elements like drag-and-drop
+        functionality for pinned hikes, real-time form validation feedback, and complex chart interactions in the statistics dashboard remain
+        largely untested. These gaps exist because Jest and React Testing Library are primarily focused on functional behavior, rather than visual 
+        rendering quality.
+      </p>
+
 
       <h2 className="text-2xl font-bold text-green-700 mb-4">User Feedback</h2>
 
